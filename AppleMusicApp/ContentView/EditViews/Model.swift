@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct NusicModel: Hashable {
+struct MusicModel: Hashable {
     let name: String
     let image: String
     var isSelected: Bool = false
 
     static let allData = [
-        NusicModel(name: "Плейлисты", image: "music.note.list"),
-        NusicModel(name: "Артисты", image: "music.mic"),
-        NusicModel(name: "Альбомы", image: "square.stack"),
-        NusicModel(name: "Песни", image: "music.note"),
-        NusicModel(name: "Видеоклипы", image: "music.note.tv"),
-        NusicModel(name: "Жанры", image: "text.insert"),
-        NusicModel(name: "Телешоу", image: "play.tv.fill"),
-        NusicModel(name: "Авторы", image: "music.quarternote.3"),
-        NusicModel(name: "Загружено", image: "arrow.down.circle")
+        MusicModel(name: "Плейлисты", image: "music.note.list"),
+        MusicModel(name: "Артисты", image: "music.mic"),
+        MusicModel(name: "Альбомы", image: "square.stack"),
+        MusicModel(name: "Песни", image: "music.note"),
+        MusicModel(name: "Видеоклипы", image: "music.note.tv"),
+        MusicModel(name: "Жанры", image: "text.insert"),
+        MusicModel(name: "Телешоу", image: "play.tv.fill"),
+        MusicModel(name: "Авторы", image: "music.quarternote.3"),
+        MusicModel(name: "Загружено", image: "arrow.down.circle")
     ]
 }

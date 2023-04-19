@@ -29,7 +29,7 @@ struct PlayerView: View {
                 Image(systemName: "play.fill")
                     .resizable()
                     .scaledToFill()
-                    .accentColor(.black)
+                    .accentColor(.label)
             }
             .frame(width: 20, height: 20, alignment: .center)
             .padding()
@@ -40,7 +40,7 @@ struct PlayerView: View {
                 Image(systemName: "forward.fill")
                     .resizable()
                     .scaledToFill()
-                    .accentColor(.black)
+                    .accentColor(.label)
             }
             .frame(width: 20, height: 20, alignment: .center)
             .padding()
@@ -53,3 +53,6 @@ struct PlayerView: View {
         .background(Color.gray.opacity(0.1))
     }
 }
+
+
+

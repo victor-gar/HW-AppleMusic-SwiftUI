@@ -16,6 +16,7 @@
 		160D03F329F05EAE0049C488 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F229F05EAE0049C488 /* Model.swift */; };
 		160D03F529F05F810049C488 /* CheckboxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F429F05F800049C488 /* CheckboxToggle.swift */; };
 		160D03F729F060130049C488 /* EditMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F629F060130049C488 /* EditMainView.swift */; };
+		160D03FA29F068BB0049C488 /* Extensions + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F929F068BB0049C488 /* Extensions + UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		160D03F229F05EAE0049C488 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		160D03F429F05F800049C488 /* CheckboxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggle.swift; sourceTree = "<group>"; };
 		160D03F629F060130049C488 /* EditMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMainView.swift; sourceTree = "<group>"; };
+		160D03F929F068BB0049C488 /* Extensions + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		160D03EA29F05ABB0049C488 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				160D03F829F0688C0049C488 /* Extension */,
 				160D03F129F05E880049C488 /* EditViews */,
 				160D03EE29F05D0D0049C488 /* PlayerViews */,
 				160D03DE29F0544F0049C488 /* LibraryView.swift */,
@@ -104,6 +107,14 @@
 				160D03F629F060130049C488 /* EditMainView.swift */,
 			);
 			path = EditViews;
+			sourceTree = "<group>";
+		};
+		160D03F829F0688C0049C488 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				160D03F929F068BB0049C488 /* Extensions + UIColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */,
 				160D03DF29F0544F0049C488 /* LibraryView.swift in Sources */,
+				160D03FA29F068BB0049C488 /* Extensions + UIColor.swift in Sources */,
 				160D03F529F05F810049C488 /* CheckboxToggle.swift in Sources */,
 				160D03DD29F0544F0049C488 /* AppleMusicAppApp.swift in Sources */,
 			);

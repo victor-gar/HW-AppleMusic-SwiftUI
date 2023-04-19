@@ -24,7 +24,7 @@ struct LibraryView: View {
                                 destination: EditMainView(),
                                 label: {
                                     Text("Править")
-                                        .foregroundColor(.red)
+                                        .foregroundColor(.systemRed)
                                 }
                             )
                         }
@@ -42,7 +42,9 @@ struct LibraryView: View {
                             Image(systemName: "magnifyingglass.circle.fill")
                             Text("Поиск")
                         }
-                }.accentColor(.red)
+                }.accentColor(.systemRed)
+
+
             }
         }
 

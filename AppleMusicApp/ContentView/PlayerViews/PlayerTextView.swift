@@ -15,7 +15,7 @@ struct PlayerTextView: View {
                 .bold()
             Text("Здесь появится купленная вами в iTunes Store музыка.")
                 .font(.title2)
-                .foregroundColor(.gray)
+                .foregroundColor(.systemGray)
                 .multilineTextAlignment(.center)
         }
         .padding()

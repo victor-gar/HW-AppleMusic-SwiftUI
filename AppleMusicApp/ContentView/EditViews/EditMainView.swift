@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditMainView: View {
-    @State private var data = NusicModel.allData
+    @State private var data = MusicModel.allData
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
@@ -18,29 +18,33 @@ struct EditMainView: View {
                     HStack {
                         Toggle("", isOn: $element.isSelected)
                             .toggleStyle(CheckboxToggle(style: .circle))
-                            .foregroundColor(.red)
+                            .foregroundColor(.systemRed)
                         Image(systemName: element.image)
-                            .foregroundColor(.red)
+                            .foregroundColor(.systemRed)
                         Text(element.name)
-                            .foregroundColor(.red)
+                            .foregroundColor(.systemRed)
                         Spacer()
                         Image(systemName: "text.justify")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.systemGray)
                     }
                 }
             }
             .listStyle(.grouped)
-            .background(Color.white)
+            .background(Color.systemBackground)
             .scrollContentBackground(.hidden)
             PlayerView()
                 .overlay(Divider(), alignment: .bottom)
+                .background(Color.systemBackground)
             .toolbar {
                 Button("Готово") {
                     dismiss()
                 }
             }
         }
+        .background(Color.systemBackground)
+
     }
+
 }
 
 struct EditMainView_Previews: PreviewProvider {
