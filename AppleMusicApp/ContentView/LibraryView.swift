@@ -13,6 +13,7 @@ struct LibraryView: View {
                     NavigationView {
                         VStack {
                             Spacer()
+                            PlayerTextView()
                             Spacer()
                             PlayerView()
                                 .overlay(Divider(), alignment: .bottom)
