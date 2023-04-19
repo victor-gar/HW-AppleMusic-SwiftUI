@@ -13,7 +13,8 @@
 		160D03E429F054520049C488 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160D03E329F054520049C488 /* Preview Assets.xcassets */; };
 		160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03EC29F05BC20049C488 /* PlayerView.swift */; };
 		160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03EF29F05D4E0049C488 /* PlayerTextView.swift */; };
-		160D03F329F05EAE0049C488 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F229F05EAE0049C488 /* model.swift */; };
+		160D03F329F05EAE0049C488 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F229F05EAE0049C488 /* Model.swift */; };
+		160D03F529F05F810049C488 /* CheckboxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F429F05F800049C488 /* CheckboxToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,8 @@
 		160D03E329F054520049C488 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		160D03EC29F05BC20049C488 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		160D03EF29F05D4E0049C488 /* PlayerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTextView.swift; sourceTree = "<group>"; };
-		160D03F229F05EAE0049C488 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		160D03F229F05EAE0049C488 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		160D03F429F05F800049C488 /* CheckboxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 		160D03F129F05E880049C488 /* EditViews */ = {
 			isa = PBXGroup;
 			children = (
-				160D03F229F05EAE0049C488 /* model.swift */,
+				160D03F229F05EAE0049C488 /* Model.swift */,
+				160D03F429F05F800049C488 /* CheckboxToggle.swift */,
 			);
 			path = EditViews;
 			sourceTree = "<group>";
@@ -170,10 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160D03F329F05EAE0049C488 /* model.swift in Sources */,
+				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */,
 				160D03DF29F0544F0049C488 /* LibraryView.swift in Sources */,
+				160D03F529F05F810049C488 /* CheckboxToggle.swift in Sources */,
 				160D03DD29F0544F0049C488 /* AppleMusicAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
