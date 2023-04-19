@@ -19,6 +19,8 @@
 		160D03FA29F068BB0049C488 /* Extensions + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F929F068BB0049C488 /* Extensions + UIColor.swift */; };
 		160D03FD29F06B9A0049C488 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03FC29F06B9A0049C488 /* RadioView.swift */; };
 		160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03FE29F06E810049C488 /* RadioMediaModel.swift */; };
+		160D040129F071FC0049C488 /* RadioStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D040029F071FC0049C488 /* RadioStationView.swift */; };
+		160D040329F072E10049C488 /* RadioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D040229F072E10049C488 /* RadioPlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		160D03F929F068BB0049C488 /* Extensions + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIColor.swift"; sourceTree = "<group>"; };
 		160D03FC29F06B9A0049C488 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		160D03FE29F06E810049C488 /* RadioMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMediaModel.swift; sourceTree = "<group>"; };
+		160D040029F071FC0049C488 /* RadioStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationView.swift; sourceTree = "<group>"; };
+		160D040229F072E10049C488 /* RadioPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 			children = (
 				160D03FC29F06B9A0049C488 /* RadioView.swift */,
 				160D03FE29F06E810049C488 /* RadioMediaModel.swift */,
+				160D040029F071FC0049C488 /* RadioStationView.swift */,
+				160D040229F072E10049C488 /* RadioPlayView.swift */,
 			);
 			path = RadioViews;
 			sourceTree = "<group>";
@@ -203,9 +209,11 @@
 			files = (
 				160D03F729F060130049C488 /* EditMainView.swift in Sources */,
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
+				160D040129F071FC0049C488 /* RadioStationView.swift in Sources */,
 				160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */,
+				160D040329F072E10049C488 /* RadioPlayView.swift in Sources */,
 				160D03DF29F0544F0049C488 /* LibraryView.swift in Sources */,
 				160D03FA29F068BB0049C488 /* Extensions + UIColor.swift in Sources */,
 				160D03FD29F06B9A0049C488 /* RadioView.swift in Sources */,

@@ -43,8 +43,6 @@ struct LibraryView: View {
                             Text("Поиск")
                         }
                 }.accentColor(.systemRed)
-
-
             }
         }
 
