@@ -50,7 +50,7 @@ struct PlayerView: View {
               maxWidth: .infinity,
               alignment: .center
         )
-        .background(Color.gray.opacity(0.1))
+        .background(Color.systemGray5)
     }
 }
 

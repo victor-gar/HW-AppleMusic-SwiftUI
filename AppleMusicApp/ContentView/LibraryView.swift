@@ -32,7 +32,7 @@ struct LibraryView: View {
                         Image(systemName: "play.square.stack")
                         Text("Музыка")
                     }
-                    Text("Радио")
+                RadioView()
                         .tabItem {
                             Image(systemName: "dot.radiowaves.left.and.right")
                             Text("Радио")
@@ -43,8 +43,6 @@ struct LibraryView: View {
                             Text("Поиск")
                         }
                 }.accentColor(.systemRed)
-
-
             }
         }
 

@@ -19,6 +19,7 @@ public extension Color {
     static let quaternaryLabel = Color(UIColor.quaternaryLabel)
     
     static let systemGray = Color(UIColor.systemGray)
+    static let systemGray5 = Color(UIColor.systemGray5)
     static let systemRed = Color(UIColor.systemRed)
     
     static let systemBackground = Color(UIColor.systemBackground)
