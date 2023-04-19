@@ -21,7 +21,7 @@ struct LibraryView: View {
                         .navigationTitle("Медиатека")
                         .toolbar {
                             NavigationLink(
-                                destination: PlayerView(),
+                                destination: EditMainView(),
                                 label: {
                                     Text("Править")
                                         .foregroundColor(.red)

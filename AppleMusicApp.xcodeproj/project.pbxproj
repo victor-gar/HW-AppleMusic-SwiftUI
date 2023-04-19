@@ -15,6 +15,7 @@
 		160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03EF29F05D4E0049C488 /* PlayerTextView.swift */; };
 		160D03F329F05EAE0049C488 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F229F05EAE0049C488 /* Model.swift */; };
 		160D03F529F05F810049C488 /* CheckboxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F429F05F800049C488 /* CheckboxToggle.swift */; };
+		160D03F729F060130049C488 /* EditMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03F629F060130049C488 /* EditMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		160D03EF29F05D4E0049C488 /* PlayerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTextView.swift; sourceTree = "<group>"; };
 		160D03F229F05EAE0049C488 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		160D03F429F05F800049C488 /* CheckboxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggle.swift; sourceTree = "<group>"; };
+		160D03F629F060130049C488 /* EditMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				160D03F229F05EAE0049C488 /* Model.swift */,
 				160D03F429F05F800049C488 /* CheckboxToggle.swift */,
+				160D03F629F060130049C488 /* EditMainView.swift */,
 			);
 			path = EditViews;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160D03F729F060130049C488 /* EditMainView.swift in Sources */,
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */,
