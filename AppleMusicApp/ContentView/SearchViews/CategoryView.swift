@@ -16,7 +16,7 @@ struct CategoryView: View {
     var body: some View {
         ScrollView(.vertical){
             LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(SearchViewModel.categoryList, id: \.self) { mediaAsset in
+                ForEach(SearchViewModelCategory.categoryList, id: \.self) { mediaAsset in
                     VStack(spacing: 0) {
                         Image(mediaAsset.image)
                             .resizable()

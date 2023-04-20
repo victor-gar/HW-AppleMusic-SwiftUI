@@ -25,6 +25,9 @@
 		1644948E29F17157009CB510 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644948D29F17157009CB510 /* CategoryView.swift */; };
 		1644949029F17198009CB510 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644948F29F17198009CB510 /* SearchViewModel.swift */; };
 		1644949229F17833009CB510 /* MediaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949129F17833009CB510 /* MediaMainView.swift */; };
+		1644949429F1A922009CB510 /* Extensions + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949329F1A922009CB510 /* Extensions + String.swift */; };
+		1644949729F1AFB6009CB510 /* SearchViewModelPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949629F1AFB6009CB510 /* SearchViewModelPlaylist.swift */; };
+		1644949929F1AFCC009CB510 /* SearchViewModelMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949829F1AFCC009CB510 /* SearchViewModelMusic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		1644948D29F17157009CB510 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		1644948F29F17198009CB510 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1644949129F17833009CB510 /* MediaMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMainView.swift; sourceTree = "<group>"; };
+		1644949329F1A922009CB510 /* Extensions + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + String.swift"; sourceTree = "<group>"; };
+		1644949629F1AFB6009CB510 /* SearchViewModelPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelPlaylist.swift; sourceTree = "<group>"; };
+		1644949829F1AFCC009CB510 /* SearchViewModelMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelMusic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				160D03F929F068BB0049C488 /* Extensions + UIColor.swift */,
+				1644949329F1A922009CB510 /* Extensions + String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,11 +157,21 @@
 		1644948C29F168A3009CB510 /* SearchViews */ = {
 			isa = PBXGroup;
 			children = (
+				1644949529F1AF9F009CB510 /* Model */,
 				1644948A29F16899009CB510 /* SearchView.swift */,
 				1644948D29F17157009CB510 /* CategoryView.swift */,
-				1644948F29F17198009CB510 /* SearchViewModel.swift */,
 			);
 			path = SearchViews;
+			sourceTree = "<group>";
+		};
+		1644949529F1AF9F009CB510 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1644948F29F17198009CB510 /* SearchViewModel.swift */,
+				1644949629F1AFB6009CB510 /* SearchViewModelPlaylist.swift */,
+				1644949829F1AFCC009CB510 /* SearchViewModelMusic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,15 +246,18 @@
 			files = (
 				1644948B29F16899009CB510 /* SearchView.swift in Sources */,
 				160D03F729F060130049C488 /* EditMainView.swift in Sources */,
+				1644949729F1AFB6009CB510 /* SearchViewModelPlaylist.swift in Sources */,
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
 				160D040129F071FC0049C488 /* RadioStationView.swift in Sources */,
 				160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				1644949029F17198009CB510 /* SearchViewModel.swift in Sources */,
+				1644949429F1A922009CB510 /* Extensions + String.swift in Sources */,
 				160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */,
 				160D040329F072E10049C488 /* RadioPlayView.swift in Sources */,
 				1644948E29F17157009CB510 /* CategoryView.swift in Sources */,
 				160D03DF29F0544F0049C488 /* LibraryView.swift in Sources */,
+				1644949929F1AFCC009CB510 /* SearchViewModelMusic.swift in Sources */,
 				160D03FA29F068BB0049C488 /* Extensions + UIColor.swift in Sources */,
 				160D03FD29F06B9A0049C488 /* RadioView.swift in Sources */,
 				160D03F529F05F810049C488 /* CheckboxToggle.swift in Sources */,
