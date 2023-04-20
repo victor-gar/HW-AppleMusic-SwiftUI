@@ -29,6 +29,7 @@
 		1644949729F1AFB6009CB510 /* SearchViewModelPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949629F1AFB6009CB510 /* SearchViewModelPlaylist.swift */; };
 		1644949929F1AFCC009CB510 /* SearchViewModelMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949829F1AFCC009CB510 /* SearchViewModelMusic.swift */; };
 		1644949C29F1B365009CB510 /* PlatlistViewHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949B29F1B365009CB510 /* PlatlistViewHead.swift */; };
+		1644949E29F1C6A1009CB510 /* PlatlistViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949D29F1C6A1009CB510 /* PlatlistViewSmall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		1644949629F1AFB6009CB510 /* SearchViewModelPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelPlaylist.swift; sourceTree = "<group>"; };
 		1644949829F1AFCC009CB510 /* SearchViewModelMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelMusic.swift; sourceTree = "<group>"; };
 		1644949B29F1B365009CB510 /* PlatlistViewHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatlistViewHead.swift; sourceTree = "<group>"; };
+		1644949D29F1C6A1009CB510 /* PlatlistViewSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatlistViewSmall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				1644948D29F17157009CB510 /* CategoryViewFirst.swift */,
 				1644949B29F1B365009CB510 /* PlatlistViewHead.swift */,
+				1644949D29F1C6A1009CB510 /* PlatlistViewSmall.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
 				160D040129F071FC0049C488 /* RadioStationView.swift in Sources */,
 				160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */,
+				1644949E29F1C6A1009CB510 /* PlatlistViewSmall.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				1644949029F17198009CB510 /* SearchViewModel.swift in Sources */,
 				1644949429F1A922009CB510 /* Extensions + String.swift in Sources */,
