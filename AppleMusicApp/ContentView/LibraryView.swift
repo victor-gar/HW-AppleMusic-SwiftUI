@@ -35,7 +35,6 @@ struct LibraryView: View {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
                 }
-            
         }.accentColor(.systemRed)
     }
 }
