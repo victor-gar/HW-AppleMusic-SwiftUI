@@ -30,7 +30,7 @@ struct LibraryView: View {
                 Image(systemName: "play.square.stack.fill")
                 Text("Медиатека")
             }
-            Text("Поиск")
+            CategoryViewFirst()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
