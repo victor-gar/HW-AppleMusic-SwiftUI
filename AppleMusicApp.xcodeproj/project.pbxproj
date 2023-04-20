@@ -21,6 +21,7 @@
 		160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D03FE29F06E810049C488 /* RadioMediaModel.swift */; };
 		160D040129F071FC0049C488 /* RadioStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D040029F071FC0049C488 /* RadioStationView.swift */; };
 		160D040329F072E10049C488 /* RadioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D040229F072E10049C488 /* RadioPlayView.swift */; };
+		1644948B29F16899009CB510 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644948A29F16899009CB510 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		160D03FE29F06E810049C488 /* RadioMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMediaModel.swift; sourceTree = "<group>"; };
 		160D040029F071FC0049C488 /* RadioStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationView.swift; sourceTree = "<group>"; };
 		160D040229F072E10049C488 /* RadioPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayView.swift; sourceTree = "<group>"; };
+		1644948A29F16899009CB510 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		160D03EA29F05ABB0049C488 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				1644948C29F168A3009CB510 /* SearchViews */,
 				160D03FB29F06B720049C488 /* RadioViews */,
 				160D03F829F0688C0049C488 /* Extension */,
 				160D03F129F05E880049C488 /* EditViews */,
@@ -135,6 +138,14 @@
 				160D040229F072E10049C488 /* RadioPlayView.swift */,
 			);
 			path = RadioViews;
+			sourceTree = "<group>";
+		};
+		1644948C29F168A3009CB510 /* SearchViews */ = {
+			isa = PBXGroup;
+			children = (
+				1644948A29F16899009CB510 /* SearchView.swift */,
+			);
+			path = SearchViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1644948B29F16899009CB510 /* SearchView.swift in Sources */,
 				160D03F729F060130049C488 /* EditMainView.swift in Sources */,
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
 				160D040129F071FC0049C488 /* RadioStationView.swift in Sources */,

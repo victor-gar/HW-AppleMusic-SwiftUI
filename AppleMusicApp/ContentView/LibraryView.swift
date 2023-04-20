@@ -29,19 +29,31 @@ struct LibraryView: View {
                             )
                         }
                     }.tabItem {
-                        Image(systemName: "play.square.stack")
-                        Text("Музыка")
+                        Image(systemName: "play.circle.fill")
+                        Text("Слушать")
                     }
+            Text("Обзор")
+                .tabItem {
+                    Image(systemName: "rectangle.grid.2x2.fill")
+                    Text("Обзор")
+                }
                 RadioView()
                         .tabItem {
                             Image(systemName: "dot.radiowaves.left.and.right")
                             Text("Радио")
                         }
+                 
+            Text("Медиатека")
+                .tabItem {
+                    Image(systemName: "play.square.stack.fill")
+                    Text("Медиатека")
+                }
+            Text("Поиск")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
                     Text("Поиск")
-                        .tabItem {
-                            Image(systemName: "magnifyingglass.circle.fill")
-                            Text("Поиск")
-                        }
+                }
+            
                 }.accentColor(.systemRed)
             }
         }

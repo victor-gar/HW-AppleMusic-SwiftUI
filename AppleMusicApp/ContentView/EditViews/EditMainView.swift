@@ -33,8 +33,8 @@ struct EditMainView: View {
             .background(Color.systemBackground)
             .scrollContentBackground(.hidden)
             PlayerView()
-                .overlay(Divider(), alignment: .bottom)
-                .background(Color.systemBackground)
+            .overlay(Divider(), alignment: .bottom)
+            .background(Color.systemBackground)
             .toolbar {
                 Button("Готово") {
                     dismiss()
