@@ -34,7 +34,7 @@ struct PlatlistViewHead: View {
                         Image(headPlaylist.image)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 330, height: 230, alignment: .center)
+                            .frame(width: 340, height: 260, alignment: .center)
                             .cornerRadius(5)
                             .shadow(radius: 5)
                             .padding(.bottom, 5)
@@ -42,9 +42,9 @@ struct PlatlistViewHead: View {
                             .overlay(
                                 Text(headPlaylist.discriptionText)
                                     .lineLimit(2)
-                                    .font(.headline)
+                                    .font(.callout)
                                     .foregroundColor(.white)
-                                    .padding(.horizontal, 5)
+                                    .padding(.leading, 5)
                                     .padding(.vertical, 15),
                                 alignment: .bottom)
                     }
