@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LibraryView: View {
+
     var body: some View {
         TabView {
             Text("Cлушать")
@@ -30,7 +31,9 @@ struct LibraryView: View {
                 Image(systemName: "play.square.stack.fill")
                 Text("Медиатека")
             }
-            CategoryViewFirst()
+            SearchViews()
+                .navigationTitle("Models")
+            
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")

@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct SearchViewModelPlaylist: Hashable {
+struct SearchViewModelPlaylist: Identifiable, Hashable {
+    let id = UUID()
     let featuredText: String
     let titleText: String
     let subtitleText: String
     var image: String
     let discriptionText: String
-        
-    static let playlistGroup = [
+    
+    static let albumData: [SearchViewModelPlaylist] = [
         SearchViewModelPlaylist(featuredText: .updated, titleText: "Today's Hits", subtitleText: "Apple Music Hits", image: "playlistGroup-1", discriptionText: .discription),
         SearchViewModelPlaylist(featuredText: .updated, titleText: "A-List Pop", subtitleText: "Apple Music Pop", image: "playlistGroup-2", discriptionText: .discription),
         SearchViewModelPlaylist(featuredText: .updated, titleText: "3 Feet High and Rising", subtitleText: "De La Soul", image: "playlistGroup-6", discriptionText: .discription),

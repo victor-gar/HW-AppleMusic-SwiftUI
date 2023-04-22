@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct SearchViewModelMusic: Hashable {
+struct SearchViewModelMusic: Identifiable, Hashable {
+    let id = UUID()
     let titleText: String
     let subtitleText: String
     var image: String
     
-    static let musicList = [
+    static let songData: [SearchViewModelMusic] = [
         SearchViewModelMusic(titleText: "L'One", subtitleText: "Время", image: "musicList-1"),
         SearchViewModelMusic(titleText: "escape", subtitleText: "52 Герца", image: "musicList-2"),
         SearchViewModelMusic(titleText: "Jumanji", subtitleText: "Туда", image: "musicList-3"),

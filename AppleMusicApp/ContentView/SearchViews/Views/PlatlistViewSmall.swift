@@ -28,7 +28,7 @@ struct PlatlistViewSmall: View {
             HStack {
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: rows, spacing: 0) {
-                        ForEach(SearchViewModelPlaylist.playlistGroup, id: \.self) { headPlaylist in
+                        ForEach(SearchViewModelPlaylist.albumData, id: \.self) { headPlaylist in
                             VStack(alignment: .leading, spacing: 1) {
                                 Image(headPlaylist.image)
                                     .resizable()
@@ -40,7 +40,8 @@ struct PlatlistViewSmall: View {
                                     .font(.subheadline)
                                     .padding(.leading)
                                 Text(headPlaylist.titleText)
-                                    .font(Font.title3.weight(.medium)).padding(.leading)
+                                    .font(Font.title3.weight(.medium))
+                                    .padding(.leading)
                                 Text(headPlaylist.subtitleText)
                                     .font(.subheadline)
                                     .foregroundColor(.systemGray)

@@ -15,7 +15,7 @@ struct PlatlistViewHead: View {
     var body: some View {
         ScrollView(.horizontal){
             LazyHGrid(rows: rows) {
-                ForEach(SearchViewModelPlaylist.playlistGroup, id: \.self) { headPlaylist in
+                ForEach(SearchViewModelPlaylist.albumData, id: \.self) { headPlaylist in
                     VStack(alignment: .leading) {
                         Text(headPlaylist.featuredText)
                             .foregroundColor(.systemGray)
@@ -44,7 +44,7 @@ struct PlatlistViewHead: View {
                                     .lineLimit(2)
                                     .font(.callout)
                                     .foregroundColor(.white)
-                                    .padding(.leading, 5)
+                                    .padding(.horizontal, -15)
                                     .padding(.vertical, 15),
                                 alignment: .bottom)
                     }

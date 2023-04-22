@@ -31,6 +31,8 @@
 		1644949C29F1B365009CB510 /* PlatlistViewHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949B29F1B365009CB510 /* PlatlistViewHead.swift */; };
 		1644949E29F1C6A1009CB510 /* PlatlistViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949D29F1C6A1009CB510 /* PlatlistViewSmall.swift */; };
 		164494A029F1CDD5009CB510 /* CategoryViewSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949F29F1CDD5009CB510 /* CategoryViewSecond.swift */; };
+		164494B029F450D4009CB510 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164494AF29F450D4009CB510 /* SongRow.swift */; };
+		164494B229F450E4009CB510 /* AlbumRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164494B129F450E4009CB510 /* AlbumRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		1644949B29F1B365009CB510 /* PlatlistViewHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatlistViewHead.swift; sourceTree = "<group>"; };
 		1644949D29F1C6A1009CB510 /* PlatlistViewSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatlistViewSmall.swift; sourceTree = "<group>"; };
 		1644949F29F1CDD5009CB510 /* CategoryViewSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewSecond.swift; sourceTree = "<group>"; };
+		164494AF29F450D4009CB510 /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
+		164494B129F450E4009CB510 /* AlbumRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,12 +187,22 @@
 		1644949A29F1B32A009CB510 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				164494AE29F450B5009CB510 /* ViewData */,
 				1644948D29F17157009CB510 /* CategoryViewFirst.swift */,
 				1644949F29F1CDD5009CB510 /* CategoryViewSecond.swift */,
 				1644949B29F1B365009CB510 /* PlatlistViewHead.swift */,
 				1644949D29F1C6A1009CB510 /* PlatlistViewSmall.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		164494AE29F450B5009CB510 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				164494AF29F450D4009CB510 /* SongRow.swift */,
+				164494B129F450E4009CB510 /* AlbumRow.swift */,
+			);
+			path = ViewData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,11 +277,13 @@
 			files = (
 				1644948B29F16899009CB510 /* SearchView.swift in Sources */,
 				160D03F729F060130049C488 /* EditMainView.swift in Sources */,
+				164494B229F450E4009CB510 /* AlbumRow.swift in Sources */,
 				1644949729F1AFB6009CB510 /* SearchViewModelPlaylist.swift in Sources */,
 				1644949C29F1B365009CB510 /* PlatlistViewHead.swift in Sources */,
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
 				160D040129F071FC0049C488 /* RadioStationView.swift in Sources */,
 				160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */,
+				164494B029F450D4009CB510 /* SongRow.swift in Sources */,
 				1644949E29F1C6A1009CB510 /* PlatlistViewSmall.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				1644949029F17198009CB510 /* SearchViewModel.swift in Sources */,
