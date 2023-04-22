@@ -16,6 +16,7 @@ struct CategoryViewFirst: View {
     @State private var showingSheet = false
     
     var body: some View {
+        
         VStack{
             ScrollView(.vertical,showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 10) {
@@ -33,16 +34,11 @@ struct CategoryViewFirst: View {
                                         .padding(.vertical, 4),
                                     alignment: .bottom
                                 )
-                            
                         }
                     }
-                    
                 }
-                
             }
-            
         }
-      
     }
 }
 

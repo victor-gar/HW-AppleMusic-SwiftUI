@@ -15,13 +15,14 @@ struct SearchViews: View {
     @State private var selectedPicker = 0
     @State private var showCategory = true
 
-
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
                     TextField("Артисты, песни, тексты и др.", text: $searchText, onEditingChanged: { isEditing in
-                        
+                        withAnimation {
+                                                    isSearching = isEditing
+                                                }
                     })
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
@@ -29,11 +30,11 @@ struct SearchViews: View {
                     .cornerRadius(8)
                     .padding(.horizontal)
                     .onTapGesture {
-                        isSearching = true
-                        withAnimation {
-                            showCategory = false
-                        }
-                    }
+                                            withAnimation {
+                                                isSearching = true
+                                                showCategory = false
+                                            }
+                                        }
                     
                     if isSearching {
                         Button(action: {
@@ -42,6 +43,7 @@ struct SearchViews: View {
                                 isSearching = false
                                 UIApplication.shared.endEditing()
                                 showCategory = true
+
                             }
                         }) {
                             Text("Cancel")
@@ -68,9 +70,7 @@ struct SearchViews: View {
                 
                 if showCategory {
                     
-                   
-                    
-                    CategoryViewFirst()
+                        CategoryViewFirst()
                         .transition(.move(edge: .trailing))
                         .animation(.easeInOut(duration: 0.1), value: showCategory)
                         .padding(.horizontal)
@@ -136,8 +136,8 @@ struct SearchViews: View {
                 Spacer()
             }
             .padding(.bottom, 80)
-            .navigationTitle("Search")
-            .overlay(PlayerView()
+            .navigationTitle(isSearching ? "" : "Search")
+           .overlay(PlayerView()
                 .overlay(Divider(),
                          alignment: .bottom), alignment: .bottom)
         }

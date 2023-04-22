@@ -13,7 +13,7 @@ struct PlatlistViewHead: View {
     ]
     
     var body: some View {
-        ScrollView(.horizontal){
+        ScrollView(.horizontal, showsIndicators:  false){
             LazyHGrid(rows: rows) {
                 ForEach(SearchViewModelPlaylist.albumData, id: \.self) { headPlaylist in
                     VStack(alignment: .leading) {

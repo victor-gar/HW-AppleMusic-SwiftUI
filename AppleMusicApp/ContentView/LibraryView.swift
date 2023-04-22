@@ -32,8 +32,6 @@ struct LibraryView: View {
                 Text("Медиатека")
             }
             SearchViews()
-                .navigationTitle("Models")
-            
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
@@ -47,3 +45,4 @@ struct LibraryView_Previews: PreviewProvider {
         LibraryView()
     }
 }
+
