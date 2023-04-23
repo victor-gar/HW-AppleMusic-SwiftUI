@@ -23,8 +23,6 @@ struct RadioView: View {
 
             }
             .overlay(PlayerView()
-                .padding(.trailing, 13)
-                .padding(.leading, 13)
                 .overlay(Divider(),
                          alignment: .bottom), alignment: .bottom)
             .navigationTitle("Радио")

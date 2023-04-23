@@ -32,8 +32,7 @@ struct CategoryViewFirst: View {
                                         .foregroundColor(.white)
                                         .padding(.horizontal, 1)
                                         .padding(.vertical, 4),
-                                    alignment: .bottom
-                                )
+                                    alignment: .bottom )
                         }
                     }
                 }
