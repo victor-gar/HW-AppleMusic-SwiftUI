@@ -28,13 +28,16 @@ struct EditMainView: View {
                             .foregroundColor(.systemGray)
                     }
                 }
+                .onMove(perform: { indices, newOffset in
+                    data.move(fromOffsets: indices, toOffset: newOffset)
+                })
             }
             .listStyle(.grouped)
             .background(Color.systemBackground)
             .scrollContentBackground(.hidden)
             PlayerView()
-                .overlay(Divider(), alignment: .bottom)
-                .background(Color.systemBackground)
+            .overlay(Divider(), alignment: .bottom)
+            .background(Color.systemBackground)
             .toolbar {
                 Button("Готово") {
                     dismiss()
@@ -42,10 +45,10 @@ struct EditMainView: View {
             }
         }
         .background(Color.systemBackground)
-
     }
-
 }
+
+
 
 struct EditMainView_Previews: PreviewProvider {
     static var previews: some View {
