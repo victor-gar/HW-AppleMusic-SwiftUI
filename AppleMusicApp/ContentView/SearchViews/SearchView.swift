@@ -14,27 +14,28 @@ struct SearchViews: View {
     @State private var albums: [SearchViewModelPlaylist] = SearchViewModelPlaylist.albumData
     @State private var selectedPicker = 0
     @State private var showCategory = true
-
+    @State private var isPresented = false
+    
+    
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
                     TextField("Артисты, песни, тексты и др.", text: $searchText, onEditingChanged: { isEditing in
                         withAnimation {
-                                                    isSearching = isEditing
-                                                }
+                            isSearching = isEditing
+                        }
                     })
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
-                    .padding(.horizontal)
                     .onTapGesture {
-                                            withAnimation {
-                                                isSearching = true
-                                                showCategory = false
-                                            }
-                                        }
+                        withAnimation {
+                            isSearching = true
+                            showCategory = false
+                        }
+                    }
                     
                     if isSearching {
                         Button(action: {
@@ -43,7 +44,7 @@ struct SearchViews: View {
                                 isSearching = false
                                 UIApplication.shared.endEditing()
                                 showCategory = true
-
+                                
                             }
                         }) {
                             Text("Cancel")
@@ -70,7 +71,7 @@ struct SearchViews: View {
                 
                 if showCategory {
                     
-                        CategoryViewFirst()
+                    CategoryViewFirst()
                         .transition(.move(edge: .trailing))
                         .animation(.easeInOut(duration: 0.1), value: showCategory)
                         .padding(.horizontal)
@@ -99,18 +100,32 @@ struct SearchViews: View {
                             ForEach(songs.filter {
                                 $0.titleText.localizedCaseInsensitiveContains(searchText)
                             }) { song in
-                                NavigationLink(destination: PlayerView()) {
-                                    SongRow(song: song) }
-                                    .foregroundColor(Color.black)
-                            }
+                                Button(action: {
+                                    self.isPresented.toggle()
+                                }) {
+                                    SongRow(song: song)
+                                }
+                                .foregroundColor(Color.black)
+                                .sheet(isPresented: $isPresented) {
+                                    MusicPlayerView()
+                                }}
                             ForEach(albums.filter {
                                 $0.titleText.localizedCaseInsensitiveContains(searchText)
                             }) { album in
-                                AlbumRow(album: album)
+                                
+                                Button(action: {
+                                    self.isPresented.toggle()
+                                }) {
+                                    AlbumRow(album: album)
+                                }
+                                .foregroundColor(Color.black)
+                                .sheet(isPresented: $isPresented) {
+                                    MusicPlayerView()
+                                }
                             }
                         }
                     }
-                    .transition(.move(edge: .trailing))
+                    .transition(.move(edge: .leading))
                     .animation(.easeInOut, value: isSearching)
                     .onTapGesture {
                         UIApplication.shared.endEditing()
@@ -118,34 +133,18 @@ struct SearchViews: View {
                     .gesture(DragGesture().onChanged { _ in
                         UIApplication.shared.endEditing()
                     })
-                } else {
-                    
-                    ForEach(songs.filter {
-                        $0.titleText.localizedCaseInsensitiveContains(searchText)
-                    }) { song in
-                        
-                        SongRow(song: song)
-                    }
-                    
-                    ForEach(albums.filter {
-                        $0.titleText.localizedCaseInsensitiveContains(searchText)
-                    }) { album in
-                        AlbumRow(album: album)
-                    }
                 }
                 Spacer()
             }
             .padding(.bottom, 80)
             .navigationTitle(isSearching ? "" : "Search")
-           .overlay(PlayerView()
+            .overlay(PlayerView()
                 .overlay(Divider(),
                          alignment: .bottom), alignment: .bottom)
         }
     }
     
 }
-
-
 
 extension UIApplication {
     func endEditing() {
@@ -159,3 +158,6 @@ struct SearchViews_Previews: PreviewProvider {
         SearchViews()
     }
 }
+
+
+
