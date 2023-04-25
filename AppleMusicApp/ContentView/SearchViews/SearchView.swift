@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct SearchViews: View {
-    @State private var searchText = ""
     @State private var isSearching = false
     @State private var songs: [SearchViewModelMusic] = SearchViewModelMusic.songData
     @State private var albums: [SearchViewModelPlaylist] = SearchViewModelPlaylist.albumData
     @State private var selectedPicker = 0
+    @State private var searchText = ""
+
     @State private var showCategory = true
     @State private var isPresented = false
     

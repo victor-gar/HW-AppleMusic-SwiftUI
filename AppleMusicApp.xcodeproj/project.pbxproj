@@ -23,6 +23,8 @@
 		160D040329F072E10049C488 /* RadioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D040229F072E10049C488 /* RadioPlayView.swift */; };
 		161A681129F4749A002680E6 /* SongRowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A681029F4749A002680E6 /* SongRowList.swift */; };
 		161A681329F510E3002680E6 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A681229F510E3002680E6 /* MusicPlayerView.swift */; };
+		161A681629F648ED002680E6 /* SearchUiKitRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A681529F648ED002680E6 /* SearchUiKitRepresentable.swift */; };
+		161A681929F684B5002680E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 161A681829F684B5002680E6 /* SnapKit */; };
 		1644948B29F16899009CB510 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644948A29F16899009CB510 /* SearchView.swift */; };
 		1644948E29F17157009CB510 /* CategoryViewFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644948D29F17157009CB510 /* CategoryViewFirst.swift */; };
 		1644949029F17198009CB510 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644948F29F17198009CB510 /* SearchViewModel.swift */; };
@@ -35,6 +37,9 @@
 		164494A029F1CDD5009CB510 /* CategoryViewSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644949F29F1CDD5009CB510 /* CategoryViewSecond.swift */; };
 		164494B029F450D4009CB510 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164494AF29F450D4009CB510 /* SongRow.swift */; };
 		164494B229F450E4009CB510 /* AlbumRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164494B129F450E4009CB510 /* AlbumRow.swift */; };
+		1650F0FB29F7D58600CC7AFF /* SearchUiKitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650F0FA29F7D58600CC7AFF /* SearchUiKitCell.swift */; };
+		1650F0FD29F7D5A200CC7AFF /* SearchUiKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650F0FC29F7D5A200CC7AFF /* SearchUiKitView.swift */; };
+		1650F0FF29F7D67700CC7AFF /* SearchUiKitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650F0FE29F7D67700CC7AFF /* SearchUiKitCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,7 @@
 		160D040229F072E10049C488 /* RadioPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayView.swift; sourceTree = "<group>"; };
 		161A681029F4749A002680E6 /* SongRowList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowList.swift; sourceTree = "<group>"; };
 		161A681229F510E3002680E6 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		161A681529F648ED002680E6 /* SearchUiKitRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUiKitRepresentable.swift; sourceTree = "<group>"; };
 		1644948A29F16899009CB510 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1644948D29F17157009CB510 /* CategoryViewFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewFirst.swift; sourceTree = "<group>"; };
 		1644948F29F17198009CB510 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 		1644949F29F1CDD5009CB510 /* CategoryViewSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewSecond.swift; sourceTree = "<group>"; };
 		164494AF29F450D4009CB510 /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		164494B129F450E4009CB510 /* AlbumRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRow.swift; sourceTree = "<group>"; };
+		1650F0FA29F7D58600CC7AFF /* SearchUiKitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUiKitCell.swift; sourceTree = "<group>"; };
+		1650F0FC29F7D5A200CC7AFF /* SearchUiKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUiKitView.swift; sourceTree = "<group>"; };
+		1650F0FE29F7D67700CC7AFF /* SearchUiKitCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUiKitCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161A681929F684B5002680E6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +128,7 @@
 		160D03EA29F05ABB0049C488 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				161A681429F648C0002680E6 /* SearchUIKit */,
 				1644948C29F168A3009CB510 /* SearchViews */,
 				160D03FB29F06B720049C488 /* RadioViews */,
 				160D03F829F0688C0049C488 /* Extension */,
@@ -167,6 +178,17 @@
 				160D040229F072E10049C488 /* RadioPlayView.swift */,
 			);
 			path = RadioViews;
+			sourceTree = "<group>";
+		};
+		161A681429F648C0002680E6 /* SearchUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				161A681529F648ED002680E6 /* SearchUiKitRepresentable.swift */,
+				1650F0FA29F7D58600CC7AFF /* SearchUiKitCell.swift */,
+				1650F0FC29F7D5A200CC7AFF /* SearchUiKitView.swift */,
+				1650F0FE29F7D67700CC7AFF /* SearchUiKitCoordinator.swift */,
+			);
+			path = SearchUIKit;
 			sourceTree = "<group>";
 		};
 		1644948C29F168A3009CB510 /* SearchViews */ = {
@@ -227,6 +249,9 @@
 			dependencies = (
 			);
 			name = AppleMusicApp;
+			packageProductDependencies = (
+				161A681829F684B5002680E6 /* SnapKit */,
+			);
 			productName = AppleMusicApp;
 			productReference = 160D03D929F0544F0049C488 /* AppleMusicApp.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +280,9 @@
 				Base,
 			);
 			mainGroup = 160D03D029F0544F0049C488;
+			packageReferences = (
+				161A681729F684B5002680E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 160D03DA29F0544F0049C488 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,14 +316,18 @@
 				1644949729F1AFB6009CB510 /* SearchViewModelPlaylist.swift in Sources */,
 				1644949C29F1B365009CB510 /* PlatlistViewHead.swift in Sources */,
 				160D03F329F05EAE0049C488 /* Model.swift in Sources */,
+				161A681629F648ED002680E6 /* SearchUiKitRepresentable.swift in Sources */,
+				1650F0FD29F7D5A200CC7AFF /* SearchUiKitView.swift in Sources */,
 				160D040129F071FC0049C488 /* RadioStationView.swift in Sources */,
 				160D03FF29F06E810049C488 /* RadioMediaModel.swift in Sources */,
+				1650F0FF29F7D67700CC7AFF /* SearchUiKitCoordinator.swift in Sources */,
 				164494B029F450D4009CB510 /* SongRow.swift in Sources */,
 				1644949E29F1C6A1009CB510 /* PlatlistViewSmall.swift in Sources */,
 				160D03F029F05D4E0049C488 /* PlayerTextView.swift in Sources */,
 				1644949029F17198009CB510 /* SearchViewModel.swift in Sources */,
 				1644949429F1A922009CB510 /* Extensions + String.swift in Sources */,
 				160D03ED29F05BC20049C488 /* PlayerView.swift in Sources */,
+				1650F0FB29F7D58600CC7AFF /* SearchUiKitCell.swift in Sources */,
 				164494A029F1CDD5009CB510 /* CategoryViewSecond.swift in Sources */,
 				160D040329F072E10049C488 /* RadioPlayView.swift in Sources */,
 				1644948E29F17157009CB510 /* CategoryViewFirst.swift in Sources */,
@@ -507,6 +539,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		161A681729F684B5002680E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		161A681829F684B5002680E6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 161A681729F684B5002680E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 160D03D129F0544F0049C488 /* Project object */;
 }

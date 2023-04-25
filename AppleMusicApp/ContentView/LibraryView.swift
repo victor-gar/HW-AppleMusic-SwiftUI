@@ -16,11 +16,6 @@ struct LibraryView: View {
                     Image(systemName: "play.circle.fill")
                     Text("Слушать")
                 }
-            Text("Обзор")
-                .tabItem {
-                    Image(systemName: "rectangle.grid.2x2.fill")
-                    Text("Обзор")
-                }
             RadioView()
                 .tabItem {
                     Image(systemName: "dot.radiowaves.left.and.right")
@@ -35,6 +30,11 @@ struct LibraryView: View {
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
+                }
+            SearchUiKitView()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Поиск UiKit")
                 }
         }.accentColor(.systemRed)
     }
